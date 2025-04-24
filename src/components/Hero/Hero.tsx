@@ -25,9 +25,9 @@ export function Hero() {
           <p className="small-resume">Присоединяйся! <img src={Hello} width="20px"/></p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
-          <BrowserRouter>
+          {/* <BrowserRouter> */}
             <NavHashLink smooth to="#contact" className="button">Связаться</NavHashLink>
-          </BrowserRouter>
+          {/* </BrowserRouter> */}
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
       <div className="social-media"><a
@@ -45,7 +45,7 @@ export function Hero() {
           <img src={githubIcon} alt="GitHub" />
         </a> */}
         <a
-          href="https://api.whatsapp.com/send/?phone=%2B375256634708&text=Привет! Я нашел твой контакнт на сайте..%0A%0A"
+          href="https://api.whatsapp.com/send/?phone=%2B375256634708&text=Привет! Я нашел твой контакт на сайте devgame.online.%0A%0A"
           target="_blank"
           rel="noreferrer"
         >

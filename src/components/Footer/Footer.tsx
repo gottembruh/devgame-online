@@ -29,7 +29,7 @@ export function Footer() {
       <div className="social-media">
     
         <a
-          href="https://api.whatsapp.com/send/?phone=%2B375256634708&text=Привет! Я нашел твой контакт через портфолио сайт.%0A%0A"
+          href="https://api.whatsapp.com/send/?phone=%2B375256634708&text=Привет! Я нашел твой контакт на сайте devgame.online.%0A%0A"
           target="_blank"
           rel="noreferrer"
         >
