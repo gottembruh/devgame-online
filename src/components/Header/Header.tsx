@@ -15,7 +15,7 @@ export function Header() {
   }
   return (
     <Container className="header-fixed">
-      <Router>
+      {/* <Router> */}
         <HashLink smooth to="#home" className="logo">
           <span>{"<Создай "}</span>
           <span>{" игру :) />"}</span>
@@ -53,7 +53,7 @@ export function Header() {
             setActive(!isActive)
           }}
         ></div>
-      </Router>
+      {/* </Router> */}
     </Container>
   )
 }

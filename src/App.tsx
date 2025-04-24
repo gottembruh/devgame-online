@@ -1,20 +1,20 @@
-import React from 'react'
-// import { useEffect } from 'react'
-import { Footer } from './components/Footer/Footer'
-import { Header } from './components/Header/Header'
-import { Main } from './components/Main/Main'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { GlobalStyle } from './styles/global'
-import { Analytics } from "@vercel/analytics/react"
-
+import Home from './Home'
+import Error from './Error'
 import 'react-toastify/dist/ReactToastify.css'
-function App() {
+
+const App = () => {
   return (
-    <>
-      <GlobalStyle></GlobalStyle>
-      <Header></Header>
-      <Main></Main>
-      <Analytics />
-      <Footer></Footer>
+    <>`
+      <BrowserRouter>
+        <GlobalStyle></GlobalStyle>
+        <Routes>
+          <Route path="/404" element={<Error />} />
+          <Route path="*" element={<Navigate to="/404" replace />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
